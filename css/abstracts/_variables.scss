@@ -1,0 +1,79 @@
+/*------------------------------------------
+*
+*                  COLORS
+*
+*------------------------------------------*/
+// Intention
+$primary: #ee2222;
+$info: #209cee;
+$success: #23d160;
+$warning: #ffdd57;
+$danger: #ff3860;
+
+// Shades of grey
+$grey-darker: #222;
+$grey-dark: #333;
+$grey: #555;
+$grey-light: #777;
+$grey-lighter: #aaa;
+
+// HELPER SHADES
+// The same can be done for any other color
+$primaryDark: darken($primary, 5%);
+$primaryLight: lighten($primary, 5%);
+
+/*------------------------------------------
+*
+*               COLOR CLASSES
+*             ~~~~~~~~~~~~~~~~~
+*
+* Any colors added here will be accessible
+* on all pages from the classes:
+* .text-color-XXX
+* .bg-color-XXX
+*------------------------------------------*/
+$textColors: (
+  "primary": $primary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "dark": $grey-dark,
+  "light": $grey-light,
+  "lighter": $grey-lighter,
+  "black": #112,
+  "white": #fffffe
+);
+
+$backgroundColors: (
+  "light": $grey-lighter,
+  "dark": $grey-dark
+);
+
+/*------------------------------------------
+*
+*                TYPOGRAPHY
+*
+*------------------------------------------*/
+$title-font-size: 3.2rem;
+$subtitle-font-size: 1.8rem;
+$text-font-size: 1.4rem;
+
+/*------------------------------------------
+*
+*                BREAKPOINTS
+*
+*------------------------------------------*/
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+/*------------------------------------------
+*
+*                 LAYOUTS
+*
+*------------------------------------------*/
+$gap: 8px;
