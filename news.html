@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/5b99deccfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Martel+Sans:400,800|Overpass:400,600,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.scss" />
+    <title>Fandridis Electric | News</title>
+  </head>
+  <body>
+    <!-- NAVIGATION MENU BAR-->
+    <nav id="nav" role="navigation" aria-label="main navigation">
+      <a href="/index.html">
+        <img class="nav-logo" src="/assets/images/fe-logo-white.png" />
+      </a>
+
+      <div class="nav-links-wrapper">
+        <a class="nav-link " href="index.html">
+          HOME
+        </a>
+
+        <a class="nav-link active" href="news.html">
+          NEWS
+        </a>
+
+        <a class="nav-link" href="contact.html">
+          CONTACT US
+        </a>
+        <button class="btn btn--filled ml-20 clickToCall">
+          Click to call
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <a href="index.html"
+        ><img class="nav-logo" src="/assets/images/fe-logo-white.png"
+      /></a>
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <div class="nav-links-wrapper">
+          <a class="nav-link" href="index.html">
+            HOME
+          </a>
+
+          <a class="nav-link active" href="news.html">
+            NEWS
+          </a>
+
+          <a class="nav-link" href="contact.html">
+            CONTACT US
+          </a>
+          <button class="btn btn--filled ml-20 clickToCall">
+            Click to call
+          </button>
+        </div>
+      </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section hero-section--s">
+      <div class="hero-text-container">
+        <h1 id="subtitle" class="mb-24">
+          Reliable Electrician in Greece<br />
+          Over 35 years of experience
+        </h1>
+        <h2 class="mb-24">
+          Electrical installations - Security - Automations<br />
+          For Commercial & Residential spaces
+        </h2>
+      </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="newsSection" class="section section--l section--column section--center">
+   
+    
+    </section>
+
+    <!-- NEWS CARD TEMPLATE -->
+    <template id="tplPostCard">
+      <div class="card">
+        <img src="https://picsum.photos/300" alt="Fandridis electric featured post image">
+        <div class="card__text-wrapper relative">
+          <h1 id="card__title">Title</h1>
+      
+          <p class="date"><i class="fas fa-clock"></i> <span id="date">date date</span></p>
+          <p id="description">Description</p>
+      
+          <a id="link__read-more" class="absolute" href="">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </template>
+
+    <!-- FOOTER -->
+    <footer>
+          <a href="index.html"><img class="nav-logo" src="./assets/images/fe-logo-white.png"
+              alt="Fandridis electric logo in white" /></a>
+          <div class="footer-links-area">
+            <div class="footer-links-wrapper">
+              <a class="mb-8" href="index.html">Home</a>
+              <a class="mb-8" href="news.html">News</a>
+              <a class="mb-8" href="contact.html">Contact us</a class="mb-8">
+            </div>
+            <div class="footer-some-wrapper">
+              <a class="mb-8" href="https://www.facebook.com/fandridiselectric" target="_blank"><i
+                  class="fab fa-facebook-square"></i> Facebook</a><a class="mb-8"
+                href="https://www.instagram.com/fandridis_electric/" target="_blank"><i class="fab fa-instagram-square"></i>
+                Instagram</a class="mb-8">
+            </div>
+            <div class="footer-info-wrapper">
+              <a class="mb-8" href="https://goo.gl/maps/nFhxcoYCHvfPyL7W6">Profiti Ilia 13, Nea Smyrni</a>
+              <a class="mb-8" href="tel:2109847316">2109847316</a class="mb-8">
+              <a class="mb-8" href="tel:2109949413">2109949413</a class="mb-8">
+              <a class="mb-8" href=mailto:info@fandridis.com? subject="subject text">info@fandridis.com</a class="mb-8">
+            </div>
+          </div>
+    </footer>
+    <script src="./js/pages/news.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/5b99deccfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Martel+Sans:400,800|Overpass:400,600,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.scss" />
+    <title>Fandridis Electric | Contacts</title>
+  </head>
+  <body>
+    
+    <!-- NAVIGATION MENU BAR-->
+    <nav id="nav" role="navigation" aria-label="main navigation">
+      <a href="/index.html">
+        <img class="nav-logo" src="/assets/images/fe-logo-white.png" />
+      </a>
+
+      <div class="nav-links-wrapper">
+        <a class="nav-link " href="index.html">
+          HOME
+        </a>
+
+        <a class="nav-link" href="news.html">
+          NEWS
+        </a>
+
+        <a class="nav-link active" href="contact.html">
+          CONTACT US
+        </a>
+        <button class="btn btn--filled ml-20 clickToCall">
+          Click to call
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <a href="index.html"
+        ><img class="nav-logo" src="/assets/images/fe-logo-white.png"
+      /></a>
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <div class="nav-links-wrapper">
+          <a class="nav-link " href="index.html">
+            HOME
+          </a>
+
+          <a class="nav-link" href="news.html">
+            NEWS
+          </a>
+
+          <a class="nav-link active" href="contact.html">
+            CONTACT US
+          </a>
+          <button class="btn btn--filled ml-20 clickToCall">
+            Click to call
+          </button>
+        </div>
+      </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section hero-section--s">
+      <div class="hero-text-container">
+        <h1 id="subtitle" class="mb-24">
+          Reliable Electrician in Greece<br />
+          Over 35 years of experience
+        </h1>
+        <h2 class="mb-24">
+          Electrical installations - Security - Automations<br />
+          For Commercial & Residential spaces
+        </h2>
+      </div>
+    </section>
+
+    <!-- CONTACTS SECTION -->
+    <section id="contacts" class="section section--l section--bg-dark align-top section--center contacts-section">
+          <div class="text-wrapper text-wrapper--light text-wrapper--left">
+            <h1 class="mb-24">
+              Contact us or<br />
+              request us to contact you
+            </h1>
+            <p class="mb-24">
+              Please, do not hesitate and contact us though email, form or
+              simply call us. We will answer to all emails and form messages as soon
+              as possible. In case of emergency or time sensitive matter, please
+              call us:
+            </p>
+            <button class="btn btn--outlined clickToCall">Click to call</button>
+          </div>
+        
+          <form action="https://formspree.io/mqkqorkd" method="POST">
+            <label for="fullName">
+              <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+            </label>
+        
+            <label for="contDetails">
+              <input type="email" name="_replyto" id="contDetails" placeholder="Email" required>
+            </label>
+            <label for="">
+              Project information<br />
+              <select name="" id="" required>
+                <option value="commercial">Commercial</option>
+                <option selected value="residential">Residential</option>
+              </select>
+            </label>
+            <label for="message"></label>
+            <textarea class="mb-24" type="area" name="message" id="message" rows="5" placeholder="Type your message here..."
+              required>
+                </label>
+                <input class="btn btn--filled" type="submit" value="Send message">
+              </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+            <a href="index.html"><img class="nav-logo" src="./assets/images/fe-logo-white.png"
+                alt="Fandridis electric logo in white" /></a>
+            <div class="footer-links-area">
+              <div class="footer-links-wrapper">
+                <a class="mb-8" href="index.html">Home</a>
+                <a class="mb-8" href="news.html">News</a>
+                <a class="mb-8" href="contact.html">Contact us</a class="mb-8">
+              </div>
+              <div class="footer-some-wrapper">
+                <a class="mb-8" href="https://www.facebook.com/fandridiselectric" target="_blank"><i
+                    class="fab fa-facebook-square"></i> Facebook</a><a class="mb-8"
+                  href="https://www.instagram.com/fandridis_electric/" target="_blank"><i class="fab fa-instagram-square"></i>
+                  Instagram</a class="mb-8">
+              </div>
+              <div class="footer-info-wrapper">
+                <a class="mb-8" href="https://goo.gl/maps/nFhxcoYCHvfPyL7W6">Profiti Ilia 13, Nea Smyrni</a>
+                <a class="mb-8" href="tel:2109847316">2109847316</a class="mb-8">
+                <a class="mb-8" href="tel:2109949413">2109949413</a class="mb-8">
+                <a class="mb-8" href=mailto:info@fandridis.com? subject="subject text">info@fandridis.com</a class="mb-8">
+              </div>
+            </div>
+    </footer>
+    <script src="./js/pages/home.js"></script>
+  </body>
+</html>

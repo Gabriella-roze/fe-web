@@ -4,11 +4,368 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/5b99deccfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Martel+Sans:400,800|Overpass:400,600,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.scss" />
     <title>Fandridis Electric | Home</title>
   </head>
   <body>
-    <h1>hello</h1>
+
+    <!-- NAVIGATION MENU BAR-->
+    <nav id="nav" role="navigation" aria-label="main navigation">
+      <a href="/index.html">
+        <img class="nav-logo" src="/assets/images/fe-logo-white.png" />
+      </a>
+
+      <div class="nav-links-wrapper">
+        <a class="nav-link active" href="index.html">
+          HOME
+        </a>
+
+        <a class="nav-link" href="news.html">
+          NEWS
+        </a>
+
+        <a class="nav-link" href="contact.html">
+          CONTACT US
+        </a>
+        <button class="btn btn--filled ml-20 clickToCall">
+          Click to call
+        </button>
+      </div>
+
+              <a style="display: none;" href="single-post.html">
+                sp
+              </a>
+
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <a href="index.html"><img class="nav-logo" src="/assets/images/fe-logo-white.png" /></a>
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <div class="nav-links-wrapper">
+
+          <a class="nav-link active" href="index.html">
+            HOME
+          </a>
+        
+          <a class="nav-link" href="news.html">
+            NEWS
+          </a>
+        
+          <a class="nav-link" href="contact.html">
+            CONTACT US
+          </a>
+          <button class="btn btn--filled ml-20 clickToCall">
+            Click to call
+          </button>
+        </div>
+      </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-text-container">
+        <h1 class="mb-24">
+          Reliable Electrician in Greece<br />
+          <span id="subtitle">Over 35 years of experience</span>
+        </h1>
+        <h2 class="mb-24">
+          Electrical installations - Security - Automations<br />
+          For<strong> Commercial</strong> & <strong>Residential</strong> spaces
+        </h2>
+        <div class="mb-24">
+          <button class="btn btn--filled clickToCall">Click to call</button>
+          <button class="btn btn--white ml-20 clickToRequest">Request a callback</button>
+        </div>
+      </div>
+      <div class="hero-art"></div>
+      <div class="hero-video-container">
+        <video autoplay muted loop height="100%">
+          <source
+            src="./assets/video/fandridis-electric-hero.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section section--l services-section">
+      <div class="text-wrapper text-wrapper--left">
+        <h1 class="mb-24">
+          Providing a range of<br /><span class="title--bold">
+            Commercial & <br />Residential Services
+          </span>
+        </h1>
+        <p>
+          Electrical work can be dangerous and should only be attempted by
+          registered electricians who have the relevant skills and tools to
+          complete the job safely. Our electricians are experienced, qualified,
+          fully insured and accredited by the industry organisations. All this
+          means you can rely on us to do the work safely, professionally and
+          with care and skill.
+        </p>
+      </div>
+      <div class="options-wrapper">
+        <div class="option-box">
+          <div class="box-title-wrapper">
+            <i class="fas fa-charging-station"></i>
+            <h2>Electrical Installation</h2>
+          </div>
+          <p>
+            We have experience connecting a variety of appliances such as
+            boilers, electric ovens and water heaters which often require more
+            complex cabling, fusing and wiring to safely carrying the additional
+            load.
+          </p>
+        </div>
+
+        <div class="option-box">
+          <div class="box-title-wrapper">
+            <i class="fas fa-tachometer-alt"></i>
+            <h2>Home Automations</h2>
+          </div>
+          <p>
+            Fire and carbon monoxide monitoring, thermostat control, Remote
+            lighting and other appliance control and much more. Control your
+            home no matter where you are, safely and securely.
+          </p>
+        </div>
+
+        <div class="option-box">
+          <div class="box-title-wrapper">
+            <i class="fas fa-store-alt"></i>
+            <h2>Commercial</h2>
+          </div>
+          <p>
+            As our commercial customers can tell you, we can guarantee a
+            specialised, courteous and reasonably priced service with a
+            possibility of fairly priced and always prioritised maintenance.
+          </p>
+        </div>
+
+        <div class="option-box">
+          <div class="box-title-wrapper">
+            <i class="fas fa-car-battery"></i>
+            <h2>Electrical Services</h2>
+          </div>
+          <p>
+            Our highly skilled, friendly and professional electricians can cover
+            all sorts of jobs, such as socket repairs, lighting fixes,
+            electrical rewires, inspections and certifications in competitive
+            rates.
+          </p>
+        </div>
+
+        <div class="option-box">
+          <div class="box-title-wrapper">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Home Security</h2>
+          </div>
+          <p>
+            Through our trusted network of professionals, we offer security
+            system installations as well as the possibility to connect the
+            system to a 24/7 surveillance team. Our priority is your privacy &
+            home safety.
+          </p>
+        </div>
+
+        <div class="option-box option-box--cta">
+          <div class="box-title-wrapper">
+            <h2>
+              We are here to provide<br />
+              professional<br />
+              services!
+            </h2>
+          </div>
+          <button class="btn btn--white btn--small clickToRequest">Request a callback</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPLIERS SECTION -->
+    <section class="section section--s section--bg-orange supliers-section">
+      <div class="text-wrapper text-wrapper--light text-wrapper--left">
+        <h1 class="mb-24">
+          Companies we<span class="title--bold"> trust </span>
+        </h1>
+        <p>
+          At Fandridis Electric we use only original, tested and certified
+          products. Having over 34 years of experience, we know who great
+          suppliers are, and we cooperate with with them to provide professional
+          and quality services every time.
+        </p>
+      </div>
+      <div class="options-wrapper options-wrapper--nowrap">
+        <div class="option-box option-box--light img-hager"></div>
+        <div class="option-box option-box--light img-abb"></div>
+        <div class="option-box option-box--light img-legrand"></div>
+        <div class="option-box option-box--light img-paradox"></div>
+        <div class="option-box option-box--light img-schneider"></div>
+        <div class="option-box option-box--light img-atlas"></div>
+      </div>
+    </section>
+
+    <!-- FANDRIDIS ELECTRIC STORY -->
+    <section class="section section--l section--img relative story-section">
+      <div class="story-art"></div>
+      <div id="imgContainer" class="img-story"></div>
+      <div id="storyContainer" class="text-wrapper text-wrapper--light">
+        <h1 class="mb-24">
+          <span class="col-primary">About us</span><br />
+          <span class="title--bold">Fandridis Electric story</span>
+        </h1>
+        <p class="mb-24">
+          Fandridis electric was founded in 1986 by mr. Fandridis Manolis. It
+          started as a small team of electricians working with electrical
+          installations in small projects.
+        </p>
+        <p class="mb-24">
+          Since then, with hard work and dedication Fandridis Electric have
+          grown into one of the most comprehensive companies in the field,
+          offering a wide range of quality services in electrical installations,
+          automation and security systems throughout Greece. Meanwhile, Manolis
+          Fandridis became the President of SEHEA (Association of Electricians
+          Contractors in Attica).
+        </p>
+        <p class="mb-24">
+          The company strives to keep up-to-date with the latest developments in
+          the field to offer solutions that take advantage of all the newest
+          technologies.
+        </p>
+        <div>
+          <button class="btn btn--filled clickToRequest">Contact us</button>
+          <button id="applyJob" class="ml-20 btn btn--outlined">Join our team</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TESTIMONIALS -->
+    <section class="section section--s reviews-section">
+      <div class="text-wrapper text-wrapper--left">
+        <h1 class="mb-24">
+          Most recent
+          <br /><span class="title--bold">
+            Google reviews
+          </span>
+        </h1>
+        <p class="mb-24">
+          As a new feature of the website, we are displaying your most recent
+          reviews! Thanks to everyone who spared their time and left us a
+          review! If you are our client and would like to leave a review, go
+          here:
+        </p>
+        <button id="leaveReview" class="btn btn--outlined">Leave us a review</button>
+      </div>
+      <div class="options-wrapper options-wrapper--nowrap">
+        <div class="option-box option-box--long option-box--bg-primary">
+          <div class="box-title-wrapper box-title-wrapper--img">
+            <img src="https://i.pravatar.cc/50" alt="User picture" />
+            <h2>Name Surname</h2>
+            <p>
+              The testimonial The testimonial The testimonial The testimonial
+            </p>
+          </div>
+        </div>
+        <div class="option-box option-box--long option-box--bg-primary">
+          <div class="box-title-wrapper box-title-wrapper--img">
+            <img src="https://i.pravatar.cc/50" alt="User picture" />
+            <h2>Name Surname</h2>
+            <p>
+              The testimonial The testimonial The testimonial The testimonial
+            </p>
+          </div>
+        </div>
+        <div class="option-box option-box--long option-box--bg-primary">
+          <div class="box-title-wrapper box-title-wrapper--img">
+            <img src="https://i.pravatar.cc/50" alt="User picture" />
+            <h2>Name Surname</h2>
+            <p>
+              The testimonial The testimonial The testimonial The testimonial
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS SECTION -->
+    <section id="contacts" class="section section--l section--bg-dark align-top section--center contacts-section">
+      <div class="text-wrapper text-wrapper--light text-wrapper--left">
+        <h1 class="mb-24">
+          Contact us or<br />
+          request us to contact you
+        </h1>
+        <p class="mb-24">
+          Please, do not hesitate and contact us though email, form or
+          simply call us. We will answer to all emails and form messages as soon
+          as possible. In case of emergency or time sensitive matter, please
+          call us:
+        </p>
+        <button class="btn btn--outlined clickToCall">Click to call</button>
+      </div>
+
+      <form   action="https://formspree.io/mqkqorkd"
+  method="POST">
+        <label for="fullName">
+          <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+        </label>
+    
+        <label for="contDetails">
+          <input type="email" name="_replyto" id="contDetails" placeholder="Email" required>
+        </label>
+        <label for="">
+          Project information<br />
+          <select name="" id="" required>
+            <option value="commercial">Commercial</option>
+            <option selected value="residential">Residential</option>
+          </select>
+        </label>
+        <label for="message"></label>
+          <textarea class="mb-24" type="area" name="message" id="message" rows="5" placeholder="Type your message here..." required>
+        </label>
+        <input class="btn btn--filled" type="submit" value="Send message">
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="index.html"
+        ><img
+          class="nav-logo"
+          src="./assets/images/fe-logo-white.png"
+          alt="Fandridis electric logo in white"
+      /></a>
+      <div class="footer-links-area">
+        <div class="footer-links-wrapper">
+          <a class="mb-8" href="index.html">Home</a>
+          <a class="mb-8" href="news.html">News</a>
+          <a class="mb-8" href="contact.html">Contact us</a class="mb-8">
+        </div>
+        <div class="footer-some-wrapper">
+          <a class="mb-8" href="https://www.facebook.com/fandridiselectric" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a
+          ><a class="mb-8" href="https://www.instagram.com/fandridis_electric/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a class="mb-8">
+        </div>
+        <div class="footer-info-wrapper">
+          <a  class="mb-8" href="https://goo.gl/maps/nFhxcoYCHvfPyL7W6">Profiti Ilia 13, Nea Smyrni</a>
+         <a class="mb-8" href="tel:2109847316">2109847316</a class="mb-8">
+         <a class="mb-8" href="tel:2109949413">2109949413</a class="mb-8">
+          <a class="mb-8" href=mailto:info@fandridis.com? subject="subject text">info@fandridis.com</a class="mb-8"> 
+        </div>
+      </div>
+    </footer>
     <script src="./js/pages/home.js"></script>
   </body>
 </html>
