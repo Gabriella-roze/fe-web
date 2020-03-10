@@ -7,6 +7,7 @@ const sheetData = getSheetData(SHEET_ID, (err, data) => {
   console.log("data: ", data);
 
   populateNews(data);
+  addAnimations();
 });
 
 function populateNews(allPosts) {
@@ -30,4 +31,19 @@ function populateNews(allPosts) {
     // Append it to an element
     parent.appendChild(myTplClone);
   });
+}
+
+// ANIMATIONS
+import paratiritis from "../utilities/paratiritis";
+function addAnimations() {
+  const boxEls = document.querySelectorAll(".animate");
+
+  // Implement the onEntry function
+  function onEntry(element) {
+    console.log("onEntry: ", element);
+    element.classList.add("appear");
+  }
+
+  // Initialize paratiritis
+  paratiritis.observe(boxEls, onEntry);
 }

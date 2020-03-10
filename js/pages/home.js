@@ -1,11 +1,4 @@
 "use strict";
-console.log("Hello from home.js");
-// fetch(
-//   "https://mybusiness.googleapis.com/v4/accounts/{accountId}/locations/{locationId}/reviews"
-// )
-//   .then(res => res.json())
-//   .then(data => console.log(data));
-
 const storyContainer = document.getElementById("storyContainer");
 const imgContainer = document.getElementById("imgContainer");
 const btnLeaveReview = document.getElementById("leaveReview");
@@ -33,15 +26,15 @@ function init() {
   //   fetchReviewsData();
 }
 
-function fetchReviewsData() {
-  const locationId = "ChIJg3zvkq69oRQRcqSv2RNVGqw";
-  const accountId = "AIzaSyCYl7vjO6Cqkbub0iELtZhiZUJP8ckJt_8";
-  fetch(
-    `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews`
-  )
-    .then(res => res.json())
-    .then(data => console.log(data));
-}
+// function fetchReviewsData() {
+//   const locationId = "ChIJg3zvkq69oRQRcqSv2RNVGqw";
+//   const accountId = "AIzaSyCYl7vjO6Cqkbub0iELtZhiZUJP8ckJt_8";
+//   fetch(
+//     `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews`
+//   )
+//     .then(res => res.json())
+//     .then(data => console.log(data));
+// }
 
 function setImgHeight() {
   imgContainer.style.height = `${storyContainer.clientHeight}px`;
@@ -54,3 +47,17 @@ function call() {
 function gotToContactSection() {
   window.location.href = "#contacts";
 }
+
+// ANIMATIONS
+import paratiritis from "../utilities/paratiritis";
+
+const boxEls = document.querySelectorAll(".animate");
+
+// Implement the onEntry function
+function onEntry(element) {
+  console.log("onEntry: ", element);
+  element.classList.add("appear");
+}
+
+// Initialize paratiritis
+paratiritis.observe(boxEls, onEntry);
