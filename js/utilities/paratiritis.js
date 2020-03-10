@@ -91,9 +91,10 @@ function handleObserve(elements, onEntry, onExit, options = {}) {
       if (entry.isIntersecting) {
         onEntry(entry.target);
         options.unobserveOnEntry && observer.unobserve(entry.target);
-      } else {
-        onExit(entry.target);
       }
+      // else {
+      //   onExit(entry.target);
+      // }
     });
   };
 

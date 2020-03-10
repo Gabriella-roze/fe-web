@@ -55,8 +55,9 @@ const boxEls = document.querySelectorAll(".animate");
 
 // Implement the onEntry function
 function onEntry(element) {
-  console.log("onEntry: ", element);
-  element.classList.add("appear");
+  if (!element.classList.contains("appear")) {
+    element.classList.add("appear");
+  }
 }
 
 // Initialize paratiritis
