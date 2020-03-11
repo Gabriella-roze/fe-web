@@ -1,0 +1,242 @@
+// MEDIA QUERIES
+// Up to 990px
+@media only screen and (max-width: 990px) {
+  #post-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    article {
+      width: 95%;
+    }
+  }
+  .card {
+    width: 95%;
+    .card__text-wrapper {
+      #card__title {
+        font-size: 2rem;
+      }
+      .date {
+        font-size: 12px;
+      }
+    }
+  }
+  .hero-section {
+    .hero-text-container {
+      h1 {
+        font-size: 4.2rem;
+        #subtitle {
+          font-size: 2.8rem;
+        }
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  #storyContainer {
+    margin-left: 20px;
+    padding: 60px;
+  }
+  form input[type="submit"] {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+// Up to 890px
+@media only screen and (max-width: 890px) {
+  .card {
+    width: 98%;
+  }
+  .story-section {
+    .text-wrapper {
+      width: 80% !important;
+      padding: 0;
+    }
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    .footer-links-area {
+      width: 100%;
+      margin-top: 32px;
+      margin-bottom: 40px;
+    }
+  }
+  .services-section {
+    flex-direction: column;
+    .text-wrapper {
+      width: 80% !important;
+      margin: 90px 30px 48px 30px;
+      padding: 0;
+      &--left {
+        text-align: initial;
+      }
+    }
+    .options-wrapper {
+      max-width: 100%;
+      margin-bottom: 74px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// Up to 740px
+@media only screen and (max-width: 740px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 98%;
+      height: auto;
+    }
+    .card__text-wrapper {
+      width: 98%;
+      height: auto;
+    }
+  }
+  #nav {
+    display: none;
+  }
+  #menuToggle {
+    display: block;
+    img {
+      margin-left: 16px;
+      margin-top: 8px;
+    }
+  }
+  .text-wrapper {
+    margin-right: 30px !important;
+  }
+  .supliers-section {
+    padding-bottom: 74px;
+    flex-direction: column;
+    align-items: center;
+    .text-wrapper {
+      width: 90% !important;
+      margin: 90px 30px 48px 30px;
+      padding: 0;
+      &--left {
+        text-align: initial;
+      }
+    }
+    .options-wrapper {
+      max-width: 100%;
+    }
+  }
+  #storyContainer {
+    width: 100%;
+    margin: 30px;
+    border-radius: 5px;
+  }
+  .story-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .img-story {
+      width: 100%;
+      border-radius: initial;
+    }
+    .story-art {
+      height: 103%;
+    }
+  }
+}
+
+// Up to 600px
+@media only screen and (max-width: 600px) {
+  #post-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .card {
+    .card__text-wrapper {
+      max-height: 600px;
+      #description {
+        padding-bottom: 34px;
+      }
+    }
+  }
+  .hero-section {
+    .hero-text-container {
+      h1 {
+        line-height: 1.1;
+        #subtitle {
+          font-size: 2.5rem;
+        }
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      div {
+        .btn {
+          margin: 8px 8px 8px 0;
+        }
+      }
+    }
+  }
+  #storyContainer {
+    width: 100% !important;
+    border-radius: initial;
+    padding: 32px;
+    div {
+      .btn {
+        margin: 8px 16px 8px 0;
+      }
+    }
+  }
+  .story-section {
+    .story-art {
+      height: 100%;
+    }
+  }
+  .reviews-section {
+    padding-top: 32px;
+    flex-direction: column;
+    .options-wrapper {
+      max-width: 100%;
+    }
+    .text-wrapper {
+      width: 90%;
+      margin: 8px;
+      word-wrap: break-word;
+      text-align: initial;
+    }
+  }
+  .contacts-section {
+    flex-direction: column;
+    align-items: center;
+    .text-wrapper {
+      width: 80% !important;
+      margin: 0 30px 48px 30px;
+      padding: 0;
+      &--left {
+        text-align: initial;
+      }
+    }
+    form {
+      width: 90%;
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 64px;
+    }
+  }
+  footer {
+    align-items: center;
+    .footer-links-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-links-area {
+      flex-direction: column;
+      .footer-some-wrapper {
+        margin-top: 24px;
+        align-items: center;
+      }
+      .footer-info-wrapper {
+        margin-top: 24px;
+        align-items: center;
+      }
+    }
+  }
+}

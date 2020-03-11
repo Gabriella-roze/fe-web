@@ -1,13 +1,18 @@
 "use strict";
+// IMPORTS
 import { getSheetData } from "../utilities/googleSheetsHelpers.js";
+
+// VARIABLES
 const params = new URLSearchParams(window.location.search);
 const postID = params.get("id");
-let postData = localStorage.getItem(`post${postID}`);
+const postData = localStorage.getItem(`post${postID}`);
 const SHEET_ID = "1gr_CGAlMheelIg6mv0js1Gc5pXSTGsMrj629wUP67y4";
 const article = document.querySelector("article");
 
+// INITIALIZING
 window.addEventListener(onload, init());
 
+// FUNCTIONS
 function init() {
   postData = JSON.parse(postData);
   if (postData === null) {

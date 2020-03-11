@@ -1,5 +1,4 @@
 "use strict";
-
 // This function gets a a public google sheet from its id
 // and transforms it to a readable array of records
 function getSheetData(sheetId, cb) {
@@ -53,7 +52,6 @@ function getSheetData(sheetId, cb) {
         processedResults[thisRow][colNameToAdd] = val;
       }
     }
-
     return processedResults.filter(result => Object.keys(result).length);
   }
 }

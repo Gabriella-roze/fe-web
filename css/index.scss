@@ -1,5 +1,7 @@
 @import "abstracts/variables";
 
-@import "base/reset";
+@import "base/_reset";
 
 @import "style";
+@import "animations";
+@import "mediaQueries";
