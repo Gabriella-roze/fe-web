@@ -14,7 +14,7 @@ window.addEventListener(onload, init());
 
 // FUNCTIONS
 function init() {
-  postData = JSON.parse(postData);
+  // postData = JSON.parse(postData);
   if (postData === null) {
     console.log("post data was null");
 
@@ -29,7 +29,8 @@ function init() {
     });
   } else {
     console.log("post data was found in local Storage");
-    displayPostData(postData);
+    const newPostData = JSON.parse(postData);
+    displayPostData(newPostData);
   }
 }
 
