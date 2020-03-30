@@ -20,7 +20,7 @@ function init() {
   setImgHeight();
   paratiritis.observe(boxEls, onEntry);
   addEventListeners();
-  //   fetchReviewsData();
+  fetchReviewsData();
 }
 
 function addEventListeners() {
@@ -38,15 +38,21 @@ function addEventListeners() {
   });
 }
 
-// function fetchReviewsData() {
-//   const locationId = "ChIJg3zvkq69oRQRcqSv2RNVGqw";
-//   const accountId = "ACCOUNT_ID_INSERT_HERE_WHEN_READY";
-//   fetch(
-//     `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews`
-//   )
-//     .then(res => res.json())
-//     .then(data => console.log(data));
-// }
+function fetchReviewsData() {
+  // place id: ChIJtbPvkq69oRQRrs8YYwD2EhY
+  const locationId = "ChIJg3zvkq69oRQRcqSv2RNVGqw";
+  const accountId = "AIzaSyCYl7vjO6Cqkbub0iELtZhiZUJP8ckJt_8";
+
+  fetch(
+    `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews?access_token={tokenHere} `,
+    { method: "get" }
+  )
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(err => console.log(err));
+}
 
 function setImgHeight() {
   imgContainer.style.height = `${storyContainer.clientHeight}px`;
