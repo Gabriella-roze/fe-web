@@ -9,8 +9,8 @@ const loader = document.getElementById("loaderWrapper");
 
 // INITIALIZING
 const sheetData = getSheetData(SHEET_ID, (err, data) => {
-  console.log("err: ", err);
-  console.log("data: ", data);
+  // console.log("err: ", err);
+  // console.log("data: ", data);
 
   populateNews(data);
   closeLoader();
@@ -22,11 +22,12 @@ function populateNews(allPosts) {
   const myTpl = document.querySelector("#tplPostCard").content;
   const parent = document.querySelector("#newsSection");
 
-  allPosts.forEach(post => {
+  allPosts.forEach((post) => {
     const myTplClone = myTpl.cloneNode(true);
     let postId = post.id;
 
     myTplClone.querySelector(".card img").src = post.img;
+    myTplClone.querySelector(".card img").alt = post.alt;
     myTplClone.querySelector(".card #card__title").innerHTML = post.title;
     myTplClone.querySelector(".card #date").innerHTML = post.date;
     myTplClone.querySelector(".card #description").innerHTML = post.description;

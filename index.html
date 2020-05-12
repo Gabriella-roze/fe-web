@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9IUe3zTuCb1gk0wzyv0Vs4RfkmN3EhVM&libraries=places"></script>
     <link rel="icon" type="image/png" href="./assets/images/fandridis-electric_favicon.png">
     <script
       src="https://kit.fontawesome.com/5b99deccfe.js"
@@ -112,7 +113,7 @@
           with care and skill.
         </p>
       </div>
-      <div class="options-wrapper">
+      <div class="options-wrapper options-wrapper--mw">
         <div class="option-box">
           <div class="box-title-wrapper">
             <i class="fas fa-charging-station"></i>
@@ -263,36 +264,58 @@
         </p>
         <button id="leaveReview" class="btn btn--outlined">Leave us a review</button>
       </div>
-      <div class="options-wrapper options-wrapper--nowrap">
-        <div class="animate option-box option-box--long option-box--bg-primary">
+      <div id="reviewsWrapper" class="options-wrapper options-wrapper--nowrap">
+     <div class="animate option-box option-box--long option-box--bg-primary">
           <div class="box-title-wrapper box-title-wrapper--img">
-            <img src="https://i.pravatar.cc/50" alt="User picture" />
-            <h2>Name Surname</h2>
+            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="User picture" />
+            <h2>Darryl Tucker</h2>
             <p>
-              The testimonial The testimonial The testimonial The testimonial
+              Manolis Fandridis is the reason you call Fandridis electric. He showed expertice in the field like noone else could.
             </p>
           </div>
         </div>
         <div class="animate option-box option-box--long option-box--bg-primary">
           <div class="box-title-wrapper box-title-wrapper--img">
-            <img src="https://i.pravatar.cc/50" alt="User picture" />
-            <h2>Name Surname</h2>
+            <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="User picture" />
+            <h2>Celina Weaver</h2>
             <p>
-              The testimonial The testimonial The testimonial The testimonial
+              Great services. I called them for kitchen renovation. They helped me to plan electrical instalations for the most cost efficiency.
             </p>
           </div>
         </div>
+       
         <div class="animate option-box option-box--long option-box--bg-primary">
           <div class="box-title-wrapper box-title-wrapper--img">
-            <img src="https://i.pravatar.cc/50" alt="User picture" />
-            <h2>Name Surname</h2>
+            <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="User picture" />
+            <h2>Vernon Morgan</h2>
             <p>
-              The testimonial The testimonial The testimonial The testimonial
+              Good collaboration. Actually follows deadlines and works hard to deliver. My go to company for electrical instalations and home automations.
             </p>
           </div>
         </div>
       </div>
     </section>
+<div id="map"></div>
+
+
+
+<template id="reviewTpl">
+    <div class="animate option-box option-box--long option-box--bg-primary">
+      <div class="box-title-wrapper box-title-wrapper--img">
+        <img id="userImg" src="" alt="User picture" />
+        <h2 id="userName">Name Surname</h2>
+        <p id="userReview">
+          The testimonial is loading here...
+        </p>
+      </div>
+    </div>
+</template>
+
+
+
+
+
+
 
     <!-- CONTACTS SECTION -->
     <section id="contacts" class="section section--l section--bg-dark align-top section--center contacts-section">

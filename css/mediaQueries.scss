@@ -1,4 +1,20 @@
 // MEDIA QUERIES
+// Over 1700px width
+@media only screen and (min-width: 1700px) {
+  .section {
+    .options-wrapper {
+      &--mw {
+        max-width: 919px;
+      }
+    }
+  }
+}
+// Over 1700px height
+@media only screen and (min-height: 1140px) {
+  .hero-section {
+    height: 1065px;
+  }
+}
 // Up to 990px
 @media only screen and (max-width: 990px) {
   #post-section {
