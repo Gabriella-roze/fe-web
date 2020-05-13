@@ -18,9 +18,13 @@ window.addEventListener(onload, init());
 
 // FUNCTIONS
 function init() {
-  setImgHeight();
-  fetchReviewsData();
-  addEventListeners();
+  if (!imgContainer) {
+    addEventListeners();
+  } else {
+    setImgHeight();
+    fetchReviewsData();
+    addEventListeners();
+  }
 }
 
 function addAnimations() {
@@ -59,6 +63,7 @@ function addEventListeners() {
   document.querySelectorAll(".clickToRequest").forEach((el) => {
     el.addEventListener("click", gotToContactSection);
   });
+  if (!btnLeaveReview) return;
   btnLeaveReview.addEventListener("click", () => {
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -104,6 +109,8 @@ function fetchReviewsData() {
 }
 
 function setImgHeight() {
+  // if (!imgContainer) return;
+
   imgContainer.style.height = `${storyContainer.clientHeight}px`;
 }
 

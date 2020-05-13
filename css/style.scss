@@ -386,6 +386,9 @@ ul a {
 .hero-section {
   width: 100vw;
   height: calc(100vh - 60px);
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -403,16 +406,31 @@ ul a {
   .hero-video-container {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     opacity: 0.8;
     z-index: -1;
-    background-color: $col-primary;
+    overflow: hidden;
+    video {
+      object-fit: cover;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    ::after {
+      content: " ";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   .hero-text-container {
     margin-left: $page-padding;
+
     z-index: 3;
     h1 {
       font-family: $font-title;
@@ -430,6 +448,11 @@ ul a {
     #subtitle {
       font-size: 4.2rem;
       line-height: 1.1;
+    }
+    &--left {
+      position: absolute;
+      left: 0;
+      top: 30%;
     }
   }
   &--s {
