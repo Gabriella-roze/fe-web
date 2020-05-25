@@ -313,7 +313,7 @@ ul a {
   }
   .option-box {
     width: 210px;
-    height: 210px;
+    min-height: 210px;
     margin: 10px;
     padding: 14px;
     flex-shrink: 0;
